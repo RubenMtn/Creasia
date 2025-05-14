@@ -19,7 +19,7 @@ p.description {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -28,7 +28,7 @@ button,
 .subscribe-button {
   display: flex;
   flex-direction: column; /* Icono arriba, texto abajo */
-  padding: 7px 7px;
+  padding: 7px 2px;
   font-size: 1rem;
   border: 2px solid #d4a017;
   border-radius: 5px;
