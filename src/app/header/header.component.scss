@@ -1,0 +1,133 @@
+// Ejemplo para header.component.scss
+
+h1.welcome {
+  font-family: var(--font-welcome);
+}
+
+h2.creasia {
+  font-family: var(--font-creasia);
+  margin-bottom: 0.2em; // Añade esta línea para reducir el espacio inferior
+}
+
+p.description {
+  font-family: var(--font-description);
+  color: #000; /* Negro */
+}
+
+.section-title {
+  font-family: var(--font-section-title);
+}
+
+button {
+  font-family: var(--font-button);
+}
+
+.content {
+  font-family: var(--font-content);
+}
+
+/* Estilos generales */
+h1, h2, p {
+  margin-left: 10px;
+  margin-right: 50px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* Indicador de pantalla: Bienvenido a... */
+h1.welcome {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0f0f0f;
+  text-shadow:
+    2px 2px 4px rgba(0,0,0,0.3),
+    0 1px 0 #fff,
+    0 2px 0 #bbb;
+  user-select: none;
+  margin-bottom: 0;
+}
+
+h2.creasia {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0f0f0f;
+  text-shadow:
+    2px 2px 4px rgba(0,0,0,0.3),
+    0 1px 0 #fff,
+    0 2px 0 #bbb;
+  user-select: none;
+  margin-top: 0.3em; // Reduce el espacio superior
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1.welcome { font-size: 2rem; }
+  h2.creasia { font-size: 3.3rem; }
+  p.description {
+    font-size: 1.1rem;
+    max-width: 50%;
+    //text-align: left;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  h1, h2, p { margin-left: 20px;}
+  h1.welcome { font-size: 2.3rem; }
+  h2.creasia { font-size: 3.5rem; }
+  p.description {
+    font-size: 1.3rem;
+    max-width: 50%;
+    //text-align: left;
+  }
+  //h2 { font-size: 400%; }
+}
+
+@media (min-width: 1024px) {
+  h1, h2, p { margin-left: 40px;}
+  h1.welcome { font-size: 2.5rem; }
+  h2.creasia { font-size: 3.8rem; }
+  p.description {
+    font-size: 1.4rem;
+    max-width: 55%;
+    //text-align: left;
+  }
+  //h2 { font-size: 500%; }
+}
+
+/* Selector de idioma */
+.language-selector {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+
+  .idioms-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+  }
+  button {
+    margin-left: 5px;
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      user-select: none;
+    }
+  }
+}
+h2.creasia a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  /* Asegúrate de NO tener pointer-events: none; */
+}

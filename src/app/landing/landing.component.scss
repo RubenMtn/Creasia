@@ -1,0 +1,123 @@
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+p,
+p.description {
+  font-size: 1.2rem;
+  color: #555;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+  margin: 0 auto 20px auto;
+  word-wrap: break-word;
+  max-width: 80%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button,
+.subscribe-button {
+  display: flex;
+  flex-direction: column; /* Icono arriba, texto abajo */
+  padding: 7px 7px;
+  font-size: 1rem;
+  border: 2px solid #d4a017;
+  border-radius: 5px;
+  background-color: #fff1b4;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-height: 40px;
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 6px; /* Espacio entre icono y texto */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &:hover {
+    background-color: #e6d89c;
+    color: #000;
+  }
+}
+.button-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  margin-top: 4px;
+  display: block;
+  text-align: center;
+}
+
+.button-info,
+.about-section p  {
+  font-size: 0.95em;
+  color: black;
+  text-align: center;
+  display: block;
+}
+.section-title,
+.activities-section h2,
+.about-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about-section,
+.activities-section {
+  margin: 20px 40px;
+  text-align: justify;
+  color: black;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-description {
+  text-align: justify;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0 40px;
+}
+
+.subscribe-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  p,
+  p.description {
+    font-size: 1rem;
+    max-width: 95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .about-section,
+  .activities-section,
+  .about-description {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .activities-section h2,
+  .about-section h2 {
+    user-select: none;
+  }
+}

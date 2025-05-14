@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================
+   Variables y fuentes
+   ========================= */
+:root {
+  --font-primary: 'Arial', sans-serif;
+  --font-secondary: 'Georgia', serif;
+  --font-title: 'Times New Roman', serif;
+  --font-accent: 'Pacifico', cursive;
+  --font-monospace: 'Courier', monospace;
+
+  /* Asignaciones específicas */
+  --font-welcome: var(--font-title);         /* Para "Bienvenido..." */
+  --font-creasia: 'Noto Serif SC', 'Pacifico', 'Times New Roman', serif; /* Para "CREASIA" */
+  --font-description: var(--font-secondary); /* Para descripción */
+  --font-section-title: var(--font-title);   /* Para "Actividades" y "About us" */
+  --font-button: var(--font-primary);        /* Para los botones */
+  --font-content: var(--font-secondary);     /* Igual que descripción */
+}
+
+/* =========================
+   Fondo general
+   ========================= */
+html, body {
+  background-image: url('assets/images/dragon01.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff1b4;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+
+/* Tamaño pequeño */
+@media (max-width: 700px) {
+  html, body {
+    background-position: calc(100% + 130px) top !important;
+  }
+}
+
+/* Tamaño mediano */
+@media (min-width: 701px) and (max-width: 1024px) {
+  html, body {
+    background-position:
+      calc(
+        100% + 130px - (430px * ((100vw - 701px) / 323))
+      ) top !important;
+  }
+}
+
+/* Tamaño grande */
+@media (min-width: 1025px) {
+  html, body {
+    background-position: calc(100% - 30px) top !important;
+  }
+}

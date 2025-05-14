@@ -1,0 +1,22 @@
+<header [ngClass]="languageService.getCurrentLanguage()">
+  <div class="language-selector">
+    <img src="assets/icons/idioms.png" alt="Idiomas" class="idioms-icon">
+    <button type="button" (click)="changeLanguage('es')">
+      <img src="assets/images/flags/spain.png" alt="Español">
+    </button>
+    <button type="button" (click)="changeLanguage('en')">
+      <img src="assets/images/flags/uk.png" alt="English">
+    </button>
+    <button type="button" (click)="changeLanguage('zh')">
+      <img src="assets/images/flags/china.png" alt="中文">
+    </button>
+  </div>
+
+<h1 class="welcome" [attr.lang]="languageService.getCurrentLanguage()">
+  {{ getWelcomeText() }}
+</h1>
+   <h2 class="creasia">
+    <a routerLink="/" style="color: inherit; text-decoration: none;">CREASIA</a>
+  </h2>
+  <p class="description">{{ languageService.getTranslation('description') }}</p>
+</header>
