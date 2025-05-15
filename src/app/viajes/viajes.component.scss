@@ -3,24 +3,10 @@
   flex-direction: row; // En fila, icono a la izquierda
   align-items: center;
   justify-content: center;
-  margin: 48px 0 0 0; // Más espacio arriba, elimina espacio abajo
+  margin: 30px 0 0 0; // Más espacio arriba, elimina espacio abajo
 }
 
-.plane-icon {
-  width: 56px;
-  height: 56px;
-  border: 3px solid #000;
-  border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 28px; // Margen a la derecha del icono
-  margin-left: 20px;
-  flex-shrink: 0;
-  
-  
-}
+
 
 .viajes-description-box {
   background: rgba(255,255,255,0.85);
@@ -44,9 +30,9 @@
     align-items: center;
   }
   .plane-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 0 14px 0;
+    width: 64px;
+    height: 40px;
+    margin: 6px 0 10px 10px; // Menos espacio arriba y abajo en móvil
     margin-left: 20px;
   }
   .viajes-description-box {

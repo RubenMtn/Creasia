@@ -41,25 +41,19 @@ p.description {
   margin: 0 40px;
 }
 
-
-
-
-
-
-
-.button-activities{
+/* ACTIVITIES BUTTONS */
+.button-activities {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin: 0 20px;
 }
 
-.button-activ{
-  height: 80px;
+.button-activ {
+  height: 170px;
   min-width: 120px;
-  max-width: 350px; // Limita el ancho máximo del botón
-  display: flex;
+  //max-width: 90px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -70,11 +64,8 @@ p.description {
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: center;
-  padding: 7px 2px;
-}
-
-.button-activ {
-  height: 170px;
+  padding: 5px 1px;
+  font-size: 0.9em;
 }
 
 .button-activ img {
@@ -87,21 +78,25 @@ p.description {
   margin-right: auto;
 }
 
+.button-activ .button-info {
+  font-size: 0.92em;
+  line-height: 1.2;
+}
 
-
-
-.button-contSupBlock{
+/* SUPERIOR BUTTONS BLOCK */
+.button-contSupBlock {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   margin: 0 20px;
   min-width: 120px;
-  margin-bottom: 20px; // Espacio entre las dos filas de botones
+  margin-bottom: 10px;
 }
 
-.button-conSp{
-  min-width: 130px;
+.button-conSp,
+.button-conIf {
+  min-width: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,78 +109,32 @@ p.description {
   transition: all 0.3s ease;
   text-align: center;
   padding: 7px 2px;
-  height: 80px;
+  height: 75px;
 }
-
-.button-conSp img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-bottom: 6px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-
-
-
-
-
-.button-contInfBlock{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin: 0 20px;
-  min-width: 120px;
-}
-
-.button-conIf{
-  height: 80px;
-  min-width: 130px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #d4a017;
-  border-radius: 5px;
-  background-color: #fff1b4;
-  color: #333;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  padding: 7px 2px;
-  height: 80px;
-}
-
-.button-conIf img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin-bottom: 6px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
 
 .button-conSp img,
 .button-conIf img,
 .button-content img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
-  margin-bottom: 2px; // Reduce la distancia entre icono y texto
+  margin-bottom: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* INFERIOR BUTTONS BLOCK */
+.button-contInfBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 20px;
+  min-width: 120px;
+}
 
-
+/* BUTTON TITLE */
 .button-title {
   font-weight: bold;
   font-size: 1.1em;
@@ -194,14 +143,14 @@ p.description {
   text-align: center;
 }
 
-
-
+/* HOVER EFFECTS */
 .button-activ:hover,
 .button-content:hover {
   background-color: #e6d89c;
   color: #000;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
   p,
   p.description {
@@ -216,4 +165,19 @@ p.description {
     margin-left: 10px;
     margin-right: 10px;
   }
+  .button-activ {
+  max-width: 90px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d4a017;
+  border-radius: 5px;
+  background-color: #fff1b4;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 5px 1px;
+  font-size: 0.75em;
+}
 }
