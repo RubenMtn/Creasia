@@ -3,25 +3,32 @@
     <img src="assets/icons/plane.png" alt="Plane" class="plane-icon" />
   </div>
   <span>
-    Viajar a China con Creasia es mucho más que hacer turismo: es sumergirse en una cultura milenaria de la mano de expertos locales y compartir la experiencia con un grupo diverso y entusiasta.<br/><br/>Disfruta de la gastronomía tradicional, explora paisajes impresionantes y participa en talleres culturales que te acercarán a las costumbres chinas con el acompañamiento de nuestro equipo.
-  </span><form style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
+    Viajar a China con Creasia es mucho más que hacer turismo: es sumergirse en una cultura milenaria de la mano de
+    expertos locales y compartir la experiencia con un grupo diverso y entusiasta.<br /><br />Disfruta de la gastronomía
+    tradicional, explora paisajes impresionantes y participa en talleres culturales que te acercarán a las costumbres
+    chinas con el acompañamiento de nuestro equipo.
+  </span>
+  <form style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
     <label>
       Para organizar grupos y fechas...
     </label>
     <label>
-      ¿Cuándo te gustaría viajar? <br/><br/> Desde:
+      ¿Cuándo te gustaría viajar? <br /><br /> Desde:
       <input type="date" name="fechaInicio" required>
     </label>
-      <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; justify-content: space-between;">
       <label style="margin-bottom: 0;">
         Hasta:&nbsp;
         <input type="date" name="fechaFin" required>
       </label>
-      <button type="submit" style="margin-left: 12px;">Enviar</button>
+      <button type="submit"
+        style="background: #d4a017; color: #fff; border: none; border-radius: 4px; padding: 8px 18px; cursor: pointer;">
+        Enviar
+      </button>
     </div>
   </form>
-<div style="margin-top: 18px; font-size: 0.98em;">
-  Si deseas recibir información sobre fechas de viajes planeados
-  <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
-</div>
+  <div style="margin-top: 18px; font-size: 0.98em;">
+    Si deseas recibir información sobre fechas de viajes planeados
+    <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
+  </div>
 </div>

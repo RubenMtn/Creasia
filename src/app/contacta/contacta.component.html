@@ -9,17 +9,40 @@
     Tu opinión es importante para nosotros y nos ayuda a mejorar cada día.
     ¡Esperamos tu mensaje!<br/><br/>
   </span>
-  <form style="margin: 18px 24px 0 24px; display: flex; flex-direction: column; gap: 12px;">
+  <form (ngSubmit)="onSubmit()" style="margin: 18px 24px 0 24px; display: flex; flex-direction: column; gap: 12px;">
     <label>
       Email:<br>
-      <input type="email" name="email" required style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;">
+      <input
+        type="email"
+        name="email"
+        [(ngModel)]="mensaje.email"
+        (input)="onEmailInput()"
+        required
+        style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;"
+        [ngStyle]="emailInvalido ? {'background-color': '#ffd6d6'} : {'background-color': '#fff'}"
+      >
     </label>
     <label>
       Contenido:<br>
-      <textarea name="contenido" required rows="5" maxlength="1000" style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;"></textarea>
+      <textarea
+        name="contenido"
+        [(ngModel)]="mensaje.contenido"
+        (input)="onContenidoInput()"
+        required
+        rows="5"
+        maxlength="1000"
+        style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;"
+        [ngStyle]="contenidoInvalido ? {'background-color': '#ffd6d6'} : {'background-color': '#fff'}"
+      ></textarea>
     </label>
-    <button type="submit" style="width: fit-content; align-self: flex-end; background: #d4a017; color: #fff; border: none; border-radius: 4px; padding: 8px 18px; cursor: pointer;">
-      Enviar
-    </button>
+    <div style="display: flex; align-items: center; gap: 16px; justify-content: flex-end;">
+      <span *ngIf="enviado" style="color: green; margin-right: auto;">¡Mensaje enviado!</span>
+      <button
+        type="submit"
+        [disabled]="!mensaje.email || !mensaje.contenido"
+        style="background: #d4a017; color: #fff; border: none; border-radius: 4px; padding: 8px 18px; cursor: pointer;">
+        Enviar
+      </button>
+    </div>
   </form>
 </div>

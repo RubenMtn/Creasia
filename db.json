@@ -1,0 +1,49 @@
+{
+  "usuarios": [
+    {
+      "id": "4e2f",
+      "nombre": "aasdasd",
+      "apellidos": "sdasdas",
+      "email": "asdas",
+      "telefono": "",
+      "edad": "",
+      "comentarios": "",
+      "fechaSuscripcion": "2025-05-15T15:17:12.344Z"
+    },
+    {
+      "id": "fae9",
+      "nombre": "Rubén",
+      "apellidos": "More",
+      "email": "kkatu@mcil.com",
+      "telefono": "",
+      "edad": "",
+      "comentarios": "",
+      "fechaSuscripcion": "2025-05-15T15:24:27.340Z"
+    },
+    {
+      "id": "fe8f",
+      "nombre": "asd",
+      "apellidos": "asdas",
+      "email": "asdsadas@ex.co",
+      "telefono": "",
+      "edad": "",
+      "comentarios": "",
+      "fechaSuscripcion": "2025-05-15T15:55:18.159Z"
+    }
+  ],
+  "viajes": [],
+  "mensajes": [
+    {
+      "id": "717b",
+      "email": "sdfsd@xn--las-7ma.es",
+      "contenido": "fhgfdhd",
+      "fechaEnvio": "2025-05-15T16:02:18.339Z"
+    },
+    {
+      "id": "f1a9",
+      "email": "ru@kktua.com",
+      "contenido": "este es el mensaje",
+      "fechaEnvio": "2025-05-15T16:02:58.446Z"
+    }
+  ]
+}
