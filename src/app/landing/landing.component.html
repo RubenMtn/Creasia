@@ -1,29 +1,55 @@
 <div class="activities-section">
   <h2>{{ languageService.getTranslation('activities') }}</h2>
 </div>
-<div class="button-container">
-  <button routerLink="/viajes">
+
+<div class="button-activities">
+  <button class="button-activ" routerLink="/viajes">
     <img src="assets/icons/plane.png" alt="Plane">
     <span class="button-title">{{ languageService.getTranslation('viajes') }}</span>
     <span class="button-info">{{ languageService.getTranslation('viajesInfo') }}</span>
   </button>
-  <button>
+  <button class="button-activ" routerLink="/cafe-idioma">
     <img src="assets/icons/cup.png" alt="Cup">
     <span class="button-title">{{ languageService.getTranslation('cafe') }}</span>
     <span class="button-info">{{ languageService.getTranslation('cafeInfo') }}</span>
   </button>
-  <button>
+  <button class="button-activ" routerLink="/consultoria">
     <img src="assets/icons/shake.png" alt="Shake">
     <span class="button-title">{{ languageService.getTranslation('consulting') }}</span>
     <span class="button-info">{{ languageService.getTranslation('consultingInfo') }}</span>
   </button>
 </div>
+
 <div class="about-section">
-  <h2>{{ languageService.getTranslation('nosotros') }}</h2>
-  <p>{{ languageService.getTranslation('aboutDescription') }}</p>
+  <h2>{{ languageService.getTranslation('contenido') }}</h2>
 </div>
-<div class="subscribe-button-container">
-  <button class="subscribe-button">
-    {{ languageService.getTranslation('suscribete') }}
+
+<div class="button-contSupBlock">
+  <button class="button-conSp" routerLink="/nosotros">
+    <img src="assets/icons/us.png" alt="Nosotros">
+    <span class="button-title">{{ languageService.getTranslation('us') }}</span>
+  </button>
+  <button class="button-conSp" routerLink="/suscribete">
+    <img src="assets/icons/suscribe.png" alt="Suscribete">
+    <span class="button-title">{{ languageService.getTranslation('suscribe') }}</span>
+  </button>
+  <button class="button-conSp" routerLink="/redsocial">
+    <img src="assets/icons/media.png" alt="media">
+    <span class="button-title">{{ languageService.getTranslation('media') }}</span>
+  </button>
+</div>
+
+<div class="button-contInfBlock">
+  <button class="button-conIf" routerLink="/novedades">
+    <img src="assets/icons/novedades.png" alt="Novedades">
+    <span class="button-title">{{ languageService.getTranslation('novedades') }}</span>
+  </button>
+  <button class="button-conIf" routerLink="/legal">
+    <img src="assets/icons/legal.png" alt="Legal">
+    <span class="button-title">{{ languageService.getTranslation('legal') }}</span>
+  </button>
+  <button class="button-conIf" routerLink="/contacta">
+    <img src="assets/icons/contacto.png" alt="Contacto">
+    <span class="button-title">{{ languageService.getTranslation('contacto') }}</span>
   </button>
 </div>

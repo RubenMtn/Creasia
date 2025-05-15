@@ -11,63 +11,10 @@ p.description {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   text-align: justify;
   margin: 0 auto 20px auto;
-  word-wrap: break-word;
   max-width: 80%;
+  word-wrap: break-word;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-button,
-.subscribe-button {
-  display: flex;
-  flex-direction: column; /* Icono arriba, texto abajo */
-  padding: 7px 2px;
-  font-size: 1rem;
-  border: 2px solid #d4a017;
-  border-radius: 5px;
-  background-color: #fff1b4;
-  color: #333;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: center;
-  min-height: 40px;
-  img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin-bottom: 6px; /* Espacio entre icono y texto */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &:hover {
-    background-color: #e6d89c;
-    color: #000;
-  }
-}
-.button-title {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-bottom: 6px;
-  margin-top: 4px;
-  display: block;
-  text-align: center;
-}
-
-.button-info,
-.about-section p  {
-  font-size: 0.95em;
-  color: black;
-  text-align: center;
-  display: block;
-}
 .section-title,
 .activities-section h2,
 .about-section h2 {
@@ -77,13 +24,13 @@ button,
   margin-bottom: 10px;
 }
 
-.about-section,
-.activities-section {
+.activities-section,
+.about-section {
   margin: 20px 40px;
-  text-align: justify;
   color: black;
   font-size: 1.1rem;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .about-description {
@@ -94,12 +41,165 @@ button,
   margin: 0 40px;
 }
 
-.subscribe-button-container {
+
+
+
+
+
+
+.button-activities{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
-  width: 100%;
+  gap: 12px;
+  margin: 0 20px;
+}
+
+.button-activ{
+  height: 80px;
+  min-width: 120px;
+  max-width: 350px; // Limita el ancho máximo del botón
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d4a017;
+  border-radius: 5px;
+  background-color: #fff1b4;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 7px 2px;
+}
+
+.button-activ {
+  height: 170px;
+}
+
+.button-activ img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.button-contSupBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px;
+  min-width: 120px;
+  margin-bottom: 20px; // Espacio entre las dos filas de botones
+}
+
+.button-conSp{
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d4a017;
+  border-radius: 5px;
+  background-color: #fff1b4;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 7px 2px;
+  height: 80px;
+}
+
+.button-conSp img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+.button-contInfBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px;
+  min-width: 120px;
+}
+
+.button-conIf{
+  height: 80px;
+  min-width: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d4a017;
+  border-radius: 5px;
+  background-color: #fff1b4;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 7px 2px;
+  height: 80px;
+}
+
+.button-conIf img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 6px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.button-conSp img,
+.button-conIf img,
+.button-content img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 2px; // Reduce la distancia entre icono y texto
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.button-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 4px 0 6px 0;
+  display: block;
+  text-align: center;
+}
+
+
+
+.button-activ:hover,
+.button-content:hover {
+  background-color: #e6d89c;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -115,9 +215,5 @@ button,
   .about-description {
     margin-left: 10px;
     margin-right: 10px;
-  }
-  .activities-section h2,
-  .about-section h2 {
-    user-select: none;
   }
 }

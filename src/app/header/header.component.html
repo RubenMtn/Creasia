@@ -1,22 +1,31 @@
 <header [ngClass]="languageService.getCurrentLanguage()">
-  <div class="language-selector">
-    <img src="assets/icons/idioms.png" alt="Idiomas" class="idioms-icon">
-    <button type="button" (click)="changeLanguage('es')">
+<div class="language-selector">
+  <button type="button" class="home-icon" routerLink="/">
+    <img src="assets/icons/home.png" alt="Inicio">
+  </button>
+  <button type="button" class="idioms-icon" (click)="toggleIdiomsMenu()">
+    <img src="assets/icons/idioms.png" alt="Idiomas">
+  </button>
+  <div class="idioms-menu" *ngIf="idiomsMenuOpen">
+    <button type="button" (click)="changeLanguage('es'); toggleIdiomsMenu()">
       <img src="assets/images/flags/spain.png" alt="Español">
     </button>
-    <button type="button" (click)="changeLanguage('en')">
+    <button type="button" (click)="changeLanguage('en'); toggleIdiomsMenu()">
       <img src="assets/images/flags/uk.png" alt="English">
     </button>
-    <button type="button" (click)="changeLanguage('zh')">
+    <button type="button" (click)="changeLanguage('zh'); toggleIdiomsMenu()">
       <img src="assets/images/flags/china.png" alt="中文">
     </button>
   </div>
+</div>
 
-<h1 class="welcome" [attr.lang]="languageService.getCurrentLanguage()">
-  {{ getWelcomeText() }}
-</h1>
-   <h2 class="creasia">
+  <h1 class="welcome" [attr.lang]="languageService.getCurrentLanguage()">
+    {{ getWelcomeText() }}
+  </h1>
+  <h2 class="creasia">
     <a routerLink="/" style="color: inherit; text-decoration: none;">CREASIA</a>
   </h2>
-  <p class="description">{{ languageService.getTranslation('description') }}</p>
+  <p class="description">
+  {{ languageService.getTranslation(descriptionKey) }}
+</p>
 </header>

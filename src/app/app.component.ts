@@ -2,14 +2,14 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LanguageService } from './language.service';
 import { HeaderComponent } from "./header/header.component";
-import { FooterComponent } from './footer/footer.component';
+// import { FooterComponent } from './footer/footer.component';
 
 @Component({
   // imports: [RouterOutlet],
   selector: 'app-root',
   standalone: true, // Indica que este es un componente independiente
   //imports: [RouterOutlet, LandingComponent], // Importa RouterOutlet y LandingComponent
-  imports: [RouterOutlet, HeaderComponent, FooterComponent], // Importa RouterOutlet
+  imports: [RouterOutlet, HeaderComponent], // Importa RouterOutlet
   // template: '<app-landing></app-landing>', // Usa el selector del componente (si no no se ve el h1)
   templateUrl: './app.component.html', // Usa el archivo app.component.html
   // styleUrl: './app.component.scss'

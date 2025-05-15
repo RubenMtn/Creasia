@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { LanguageService } from '../language.service';
 
 @Component({
-  selector: 'app-viajes',
+  selector: 'app-cafe-idioma',
   imports: [],
-  templateUrl: './viajes.component.html',
-  styleUrl: './viajes.component.scss'
+  templateUrl: './cafe-idioma.component.html',
+  styleUrl: './cafe-idioma.component.scss'
 })
-export class ViajesComponent {
+export class CafeIdiomaComponent {
   constructor(public languageService: LanguageService) {}
 }
