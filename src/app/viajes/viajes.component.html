@@ -2,23 +2,21 @@
   <div class="plane-icon-wrapper">
     <img src="assets/icons/plane.png" alt="Plane" class="plane-icon" />
   </div>
-  <span>
-    Viajar a China con Creasia es mucho más que hacer turismo: es sumergirse en una cultura milenaria de la mano de
-    expertos locales y compartir la experiencia con un grupo diverso y entusiasta.<br /><br />Disfruta de la gastronomía
-    tradicional, explora paisajes impresionantes y participa en talleres culturales que te acercarán a las costumbres
-    chinas con el acompañamiento de nuestro equipo.
-  </span>
+  <span [innerHTML]="languageService.getTranslation('viajesTexto')"></span>
+  <!-- Con [innerHTML]="se evita que se muestren los <br/> de forma literal -->
   <form style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
     <label>
-      Para organizar grupos y fechas...
+      <span [innerHTML]="languageService.getTranslation('viajesFechas')"></span>
     </label>
     <label>
-      ¿Cuándo te gustaría viajar? <br /><br /> Desde:
+      <span [innerHTML]="languageService.getTranslation('viajesCuando')"></span>
+       <br /> 
+       <span [innerHTML]="languageService.getTranslation('viajesDesde')"></span>
       <input type="date" name="fechaInicio" required>
     </label>
     <div style="display: flex; align-items: center; justify-content: space-between;">
       <label style="margin-bottom: 0;">
-        Hasta:&nbsp;
+        <span [innerHTML]="languageService.getTranslation('viajesHasta')"></span>
         <input type="date" name="fechaFin" required>
       </label>
       <button type="submit"
@@ -27,8 +25,8 @@
       </button>
     </div>
   </form>
+  <br /> 
   <div style="margin-top: 18px; font-size: 0.98em;">
-    Si deseas recibir información sobre fechas de viajes planeados
-    <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
+    <span [innerHTML]="languageService.getTranslation('viajesSuscribe')"></span>
   </div>
 </div>

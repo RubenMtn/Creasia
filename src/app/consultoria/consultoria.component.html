@@ -3,16 +3,7 @@
   <div class="plane-icon-wrapper">
     <img src="assets/icons/shake.png" alt="Shake" class="plane-icon" />
   </div>
-<span>
-  Con la consultoría de Creasia, recibirás asesoramiento personalizado para resolver todas tus dudas sobre China y España, ya sea en temas de negocios, estudios, trámites, cultura o vida cotidiana.<br/><br/>
-  Nuestro equipo, con amplia experiencia internacional, te acompaña en cada paso para que tomes decisiones informadas y seguras.<br/><br/>
-  Analizamos tu situación de manera individual, proponiendo soluciones prácticas y adaptadas a tus necesidades.<br/><br/>
-  Ya sea que busques expandir tu empresa, iniciar estudios, gestionar documentos o comprender mejor la cultura, estamos aquí para ayudarte.<br/><br/>
-  Descubre cómo podemos facilitar tu camino y conectar tus proyectos entre ambos países.<br/><br/>
-  Confía en Creasia para avanzar con éxito en tus objetivos personales o profesionales.<br/><br/>
-</span>
-<div style="margin-top: 18px; font-size: 0.98em;">
-  Si deseas recibir información sobre opciones de consultoría
-  <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
-</div>
+  <span [innerHTML]="languageService.getTranslation('consultingTexto')"></span>
+  <br/><br/>
+  <span [innerHTML]="languageService.getTranslation('consultingSuscribe')"></span>
 </div>

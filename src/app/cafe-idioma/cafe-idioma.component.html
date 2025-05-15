@@ -1,17 +1,8 @@
-
 <div class="viajes-description-box">
   <div class="plane-icon-wrapper">
     <img src="assets/icons/cup.png" alt="cup" class="plane-icon" />
   </div>
-<span>
-  En las clases de chino de Creasia disfrutarás aprendiendo el idioma en un ambiente relajado, mientras tomas un café y compartes experiencias con personas de diferentes culturas.<br/><br/>
-  Nuestros profesores nativos te guiarán de forma práctica y dinámica, adaptando las lecciones a todos los niveles y necesidades.<br/><br/>
-  Fomentamos la conversación y la participación activa para que pierdas el miedo a hablar y avances rápidamente.<br/><br/>
-  Además, tendrás la oportunidad de hacer nuevos amigos y conocer más sobre la cultura china en cada encuentro.<br/><br/>
-  Ven a aprender, disfrutar y conectar con Creasia.<br/><br/>
-</span>
-<div style="margin-top: 18px; font-size: 0.98em;">
-  Si deseas recibir información sobre nuestras clases de chino
-  <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
-</div>
+  <span [innerHTML]="languageService.getTranslation('cafeTexto')"></span>
+  <br /><br />
+  <span [innerHTML]="languageService.getTranslation('cafeSuscribe')"></span>
 </div>
