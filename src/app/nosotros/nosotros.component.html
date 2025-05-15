@@ -1,13 +1,8 @@
-
 <div class="viajes-description-box">
   <div class="plane-icon-wrapper">
     <img src="assets/icons/us.png" alt="about" class="plane-icon" />
   </div>
-<span>
-  Carlota vivió en China por siete años, donde se sumergió en la cultura, el idioma y la vida cotidiana, adquiriendo una perspectiva única sobre el país.<br/><br/>Heng vivió en España durante nueve años, experimentando de cerca las costumbres, la sociedad y el idioma español, lo que le permite comprender ambas culturas en profundidad.<br/><br/>Ambas aportan una visión complementaria y enriquecedora sobre la conexión entre China y España.<br/><br/>Rubén, por su parte, ofrece el apoyo informático necesario para que Creasia funcione de manera eficiente y segura.<br/><br/>Juntos forman un equipo comprometido en acercar culturas, facilitar experiencias auténticas y acompañar a la comunidad en cada paso de su camino.<br/><br/>
-  </span>
-<div style="margin-top: 18px; font-size: 0.98em;">
-  Si deseas que te enviemos más información y poder contactar con nosotros 
-  <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
-</div>
+  <span [innerHTML]="languageService.getTranslation('usTexto')"></span>
+  <br /><br />
+  <span [innerHTML]="languageService.getTranslation('usSuscribe')"></span>
 </div>

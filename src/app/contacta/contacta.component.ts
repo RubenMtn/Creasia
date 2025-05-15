@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { MensajesService } from '../services/mensajes.service';
+import { LanguageService } from '../language.service';
 
 @Component({
   selector: 'app-contacta',
@@ -11,6 +12,7 @@ import { MensajesService } from '../services/mensajes.service';
   styleUrl: './contacta.component.scss'
 })
 export class ContactaComponent {
+  
   mensaje = {
     email: '',
     contenido: ''
@@ -20,7 +22,10 @@ export class ContactaComponent {
   emailInvalido = false;
   contenidoInvalido = false;
 
-  constructor(private mensajesService: MensajesService) {}
+constructor(
+  private mensajesService: MensajesService,
+  public languageService: LanguageService
+) {}
 
   onEmailInput() {
     this.emailInvalido = false;

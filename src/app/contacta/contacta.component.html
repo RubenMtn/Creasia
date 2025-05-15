@@ -2,16 +2,12 @@
   <div class="plane-icon-wrapper" style="display: flex; justify-content: center; align-items: flex-start; margin-bottom: 8px; margin-top: -10px;">
     <img src="assets/icons/contacto.png" alt="contacto" class="plane-icon" style="width: 40px; height: 40px;">
   </div>
-  <span>
-    Si tienes cualquier consulta, sugerencia o necesitas información adicional sobre nuestros servicios, no dudes en ponerte en contacto con el equipo de Creasia.<br/><br/>
-    Estamos a tu disposición para resolver tus dudas sobre viajes, actividades, formación, consultoría o cualquier otro aspecto relacionado con nuestra comunidad.<br/><br/>
-    También puedes utilizar este formulario para ejercer tus derechos sobre protección de datos, solicitar la baja de comunicaciones o comunicar cualquier incidencia.<br/><br/>
-    Tu opinión es importante para nosotros y nos ayuda a mejorar cada día.
-    ¡Esperamos tu mensaje!<br/><br/>
-  </span>
+ <span [innerHTML]="languageService.getTranslation('contactoTexto')"></span>
+    <br/><br/>
+
   <form (ngSubmit)="onSubmit()" style="margin: 18px 24px 0 24px; display: flex; flex-direction: column; gap: 12px;">
     <label>
-      Email:<br>
+      <span [innerHTML]="languageService.getTranslation('contactoMail')"></span><br>
       <input
         type="email"
         name="email"
@@ -23,7 +19,7 @@
       >
     </label>
     <label>
-      Contenido:<br>
+     <span [innerHTML]="languageService.getTranslation('contactoContenido')"></span><br>
       <textarea
         name="contenido"
         [(ngModel)]="mensaje.contenido"
@@ -41,7 +37,7 @@
         type="submit"
         [disabled]="!mensaje.email || !mensaje.contenido"
         style="background: #d4a017; color: #fff; border: none; border-radius: 4px; padding: 8px 18px; cursor: pointer;">
-        Enviar
+        <span [innerHTML]="languageService.getTranslation('botonEnviar')"></span>
       </button>
     </div>
   </form>

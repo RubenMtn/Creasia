@@ -3,10 +3,7 @@
     <img src="assets/icons/media.png" alt="social" class="plane-icon" />
   </div>
   <span>
-    Creasia está presente en redes sociales para que puedas mantenerte informado y conectado con nuestra comunidad en todo momento.<br/><br/>
-    Síguenos para descubrir novedades sobre viajes, talleres, clases de chino y eventos culturales que organizamos tanto en España como en China.<br/><br/>
-    Únete a nuestros grupos y participa en actividades, conoce a otras personas interesadas y forma parte de una red multicultural.<br/><br/>
-    ¡No te pierdas ninguna actualización y mantente en contacto con Creasia a través de nuestras redes sociales!<br/><br/>
+    <span [innerHTML]="languageService.getTranslation('mediaText')"></span><br/><br/>
     <div style="margin-top: 8px; display: flex; flex-direction: column; gap: 8px;">
       <a href="https://www.meetup.com/creasia-conectando-con-china-de-una-manera-creativa/" target="_blank" style="color: #d4a017; text-decoration: underline; display: flex; align-items: center;">
         <img src="assets/icons/meetup.png" alt="Meetup" style="width: 22px; height: 22px; margin-right: 8px;">Meetup
@@ -19,8 +16,6 @@
       </a>
     </div>
   </span>
-  <div style="margin-top: 18px; font-size: 0.98em;">
-    Si deseas recibir más información 
-    <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
-  </div>
+  <br/><br/>
+    <span [innerHTML]="languageService.getTranslation('mediaSuscribe')"></span><br/><br/>
 </div>

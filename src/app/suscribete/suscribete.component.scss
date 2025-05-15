@@ -108,3 +108,25 @@
     font-size: 1.28rem;
   }
 }
+
+
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.form-row span {
+  min-width: 120px; /* Ajusta este valor según el texto más largo */
+  text-align: right;
+  flex-shrink: 0;
+  padding-right: 8px;
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  max-width: 100%;
+}
