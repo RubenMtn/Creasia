@@ -1,18 +1,27 @@
-<span class="plane-icon" style="display: flex; justify-content: center; margin-bottom: 18px;">
-  <img src="assets/icons/plane.png" alt="Plane" style="width:40px; height:40px;">
-</span>
 <div class="viajes-description-box">
+  <div class="plane-icon-wrapper">
+    <img src="assets/icons/plane.png" alt="Plane" class="plane-icon" />
+  </div>
   <span>
     Viajar a China con Creasia es mucho más que hacer turismo: es sumergirse en una cultura milenaria de la mano de expertos locales y compartir la experiencia con un grupo diverso y entusiasta.<br/><br/>Disfruta de la gastronomía tradicional, explora paisajes impresionantes y participa en talleres culturales que te acercarán a las costumbres chinas con el acompañamiento de nuestro equipo.
   </span><form style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
     <label>
+      Para organizar grupos y fechas...
+    </label>
+    <label>
       ¿Cuándo te gustaría viajar? <br/><br/> Desde:
       <input type="date" name="fechaInicio" required>
     </label>
-    <label>
-      Hasta:
-      <input type="date" name="fechaFin" required>
-    </label>
-    <button type="submit" style="width: fit-content; align-self: flex-end;">Enviar</button>
+      <div style="display: flex; align-items: center; justify-content: space-between;">
+      <label style="margin-bottom: 0;">
+        Hasta:&nbsp;
+        <input type="date" name="fechaFin" required>
+      </label>
+      <button type="submit" style="margin-left: 12px;">Enviar</button>
+    </div>
   </form>
+<div style="margin-top: 18px; font-size: 0.98em;">
+  Si deseas recibir información sobre fechas de viajes planeados
+  <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
+</div>
 </div>

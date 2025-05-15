@@ -1,21 +1,25 @@
-<p>contacta works!</p>
-<br/>
-
-<span class="plane-icon" style="display: flex; justify-content: center; margin-bottom: 18px;">
-  <img src="assets/icons/plane.png" alt="Plane" style="width:56px; height:56px;">
-</span>
 <div class="viajes-description-box">
+  <div class="plane-icon-wrapper" style="display: flex; justify-content: center; align-items: flex-start; margin-bottom: 8px; margin-top: -10px;">
+    <img src="assets/icons/contacto.png" alt="contacto" class="plane-icon" style="width: 40px; height: 40px;">
+  </div>
   <span>
-    Viajar a China con Creasia es mucho más que hacer turismo: es sumergirse en una cultura milenaria de la mano de expertos locales y compartir la experiencia con un grupo diverso y entusiasta.<br/><br/>Disfruta de la gastronomía tradicional, explora paisajes impresionantes y participa en talleres culturales que te acercarán a las costumbres chinas con el acompañamiento de nuestro equipo.
-  </span><form style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
+    Si tienes cualquier consulta, sugerencia o necesitas información adicional sobre nuestros servicios, no dudes en ponerte en contacto con el equipo de Creasia.<br/><br/>
+    Estamos a tu disposición para resolver tus dudas sobre viajes, actividades, formación, consultoría o cualquier otro aspecto relacionado con nuestra comunidad.<br/><br/>
+    También puedes utilizar este formulario para ejercer tus derechos sobre protección de datos, solicitar la baja de comunicaciones o comunicar cualquier incidencia.<br/><br/>
+    Tu opinión es importante para nosotros y nos ayuda a mejorar cada día.
+    ¡Esperamos tu mensaje!<br/><br/>
+  </span>
+  <form style="margin: 18px 24px 0 24px; display: flex; flex-direction: column; gap: 12px;">
     <label>
-      ¿Cuándo te gustaría viajar? <br/><br/> Desde:
-      <input type="date" name="fechaInicio" required>
+      Email:<br>
+      <input type="email" name="email" required style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;">
     </label>
     <label>
-      Hasta:
-      <input type="date" name="fechaFin" required>
+      Contenido:<br>
+      <textarea name="contenido" required rows="5" maxlength="1000" style="width: 100%; padding: 6px; border-radius: 4px; border: 1px solid #ccc;"></textarea>
     </label>
-    <button type="submit" style="width: fit-content; align-self: flex-end;">Enviar</button>
+    <button type="submit" style="width: fit-content; align-self: flex-end; background: #d4a017; color: #fff; border: none; border-radius: 4px; padding: 8px 18px; cursor: pointer;">
+      Enviar
+    </button>
   </form>
 </div>

@@ -1,21 +1,17 @@
-<p>novedades works!</p>
-<br/>
 
-<span class="plane-icon" style="display: flex; justify-content: center; margin-bottom: 18px;">
-  <img src="assets/icons/plane.png" alt="Plane" style="width:56px; height:56px;">
-</span>
 <div class="viajes-description-box">
+  <div class="plane-icon-wrapper">
+    <img src="assets/icons/novedades.png" alt="new" class="plane-icon" />
+  </div>
   <span>
-    Viajar a China con Creasia es mucho más que hacer turismo: es sumergirse en una cultura milenaria de la mano de expertos locales y compartir la experiencia con un grupo diverso y entusiasta.<br/><br/>Disfruta de la gastronomía tradicional, explora paisajes impresionantes y participa en talleres culturales que te acercarán a las costumbres chinas con el acompañamiento de nuestro equipo.
-  </span><form style="margin-top: 32px; display: flex; flex-direction: column; gap: 12px;">
-    <label>
-      ¿Cuándo te gustaría viajar? <br/><br/> Desde:
-      <input type="date" name="fechaInicio" required>
-    </label>
-    <label>
-      Hasta:
-      <input type="date" name="fechaFin" required>
-    </label>
-    <button type="submit" style="width: fit-content; align-self: flex-end;">Enviar</button>
-  </form>
+    Descubre todas las novedades de Creasia y mantente al día de nuestras últimas actividades y propuestas.<br/><br/>
+    Aquí encontrarás información actualizada sobre próximos viajes, talleres, clases de chino y eventos culturales tanto en España como en China.<br/><br/>
+    Compartimos noticias relevantes, experiencias de nuestra comunidad y oportunidades únicas para que no te pierdas nada.<br/><br/>
+    Consulta esta sección regularmente para estar informado de todo lo que Creasia organiza y ofrece.<br/><br/>
+    ¡Sigue nuestras novedades y forma parte activa de nuestra comunidad multicultural!<br/><br/>
+  </span>
+<div style="margin-top: 18px; font-size: 0.98em;">
+  Si deseas que te enviemos más información y no perderte nada  
+  <a [routerLink]="['/suscribete']" style="color: #d4a017; text-decoration: underline;">suscríbete</a> a Creasia.
+</div>
 </div>
