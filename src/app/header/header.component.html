@@ -1,8 +1,12 @@
 <header [ngClass]="languageService.getCurrentLanguage()">
 <div class="language-selector">
-  <button type="button" class="home-icon" routerLink="/">
-    <img src="assets/icons/home.png" alt="Inicio">
-  </button>
+    <button 
+      type="button" 
+      class="home-icon" 
+      routerLink="/"
+      *ngIf="router.url !== '/'">
+      <img src="assets/icons/home.png" alt="Inicio">
+    </button>
   <button type="button" class="idioms-icon" (click)="toggleIdiomsMenu()">
     <img src="assets/icons/idioms.png" alt="Idiomas">
   </button>

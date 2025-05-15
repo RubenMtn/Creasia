@@ -44,7 +44,7 @@ export class HeaderComponent {
   }
   constructor(
     public languageService: LanguageService,
-    private router: Router
+    public router: Router
   ) {}
 
 get descriptionKey() {

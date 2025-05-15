@@ -56,7 +56,7 @@ h2.creasia {
     0 1px 0 #fff,
     0 2px 0 #bbb;
   user-select: none;
-  margin-top: 0.3em; // Reduce el espacio superior
+  margin-top: 0; // Reduce el espacio superior
 }
 
 /* Responsive */
@@ -64,8 +64,8 @@ h2.creasia {
   h1.welcome { font-size: 1.5rem; }
   h2.creasia { font-size: 2.8rem; }
   p.description {
-    font-size: 1rem;
-    max-width: 48%;
+    font-size: 0.9rem;
+    max-width: 59%;
     //text-align: left;
   }
 }
@@ -76,7 +76,7 @@ h2.creasia {
   h2.creasia { font-size: 3.5rem; }
   p.description {
     font-size: 1.3rem;
-    max-width: 50%;
+    max-width: 60%;
     //text-align: left;
   }
   //h2 { font-size: 400%; }
@@ -88,7 +88,7 @@ h2.creasia {
   h2.creasia { font-size: 3.8rem; }
   p.description {
     font-size: 1.4rem;
-    max-width: 55%;
+    max-width: 65%;
     //text-align: left;
   }
   //h2 { font-size: 500%; }
